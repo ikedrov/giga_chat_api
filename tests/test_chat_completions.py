@@ -27,7 +27,6 @@ from test_data.params import (
     NEGATIVE_INVALID_JSON,
 )
 from utils.logger import get_logger
-from assertions import assertions
 
 logger = get_logger(__name__)
 
