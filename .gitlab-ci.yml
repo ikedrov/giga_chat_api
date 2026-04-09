@@ -1,0 +1,68 @@
+stages:
+  - test
+  - report
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.pip-cache"
+  ALLURE_VERSION: "2.30.0"
+
+# ========== Кэширование ==========
+cache:
+  key: "${CI_COMMIT_REF_SLUG}"
+  paths:
+    - .pip-cache/
+    - venv/
+
+# ========== Запуск тестов ==========
+run_tests:
+  stage: test
+  image: python:3.11-slim
+  before_script:
+    - python -m venv venv
+    - source venv/bin/activate
+    - pip install --upgrade pip
+    - pip install -r requirements.txt
+  script:
+    - source venv/bin/activate
+    - python -m pytest tests/
+      --alluredir=allure-results
+      --clean-alluredir
+      -v
+      --tb=short
+      || true
+  artifacts:
+    when: always
+    paths:
+      - allure-results/
+      - logs/
+    expire_in: 7 days
+
+# ========== Генерация Allure-отчёта + GitLab Pages ==========
+pages:
+  stage: report
+  image: openjdk:17-slim
+  needs:
+    - job: run_tests
+      artifacts: true
+  before_script:
+    - apt-get update -qq && apt-get install -y -qq wget unzip > /dev/null 2>&1
+    # Установка Allure CLI
+    - wget -q "https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.zip"
+    - unzip -q "allure-${ALLURE_VERSION}.zip" -d /opt/
+    - ln -s "/opt/allure-${ALLURE_VERSION}/bin/allure" /usr/local/bin/allure
+    - allure --version
+  script:
+    # Подтягиваем историю из предыдущего отчёта (если есть)
+    - |
+      if [ -d public/history ]; then
+        echo "Копируем историю из предыдущего деплоя..."
+        cp -r public/history allure-results/history
+      fi
+    # Генерируем отчёт
+    - allure generate allure-results -o public --clean
+    - echo "Allure-отчёт сгенерирован в public/"
+  artifacts:
+    when: always
+    paths:
+      - public
+    expire_in: 30 days
