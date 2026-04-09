@@ -47,6 +47,13 @@ jobs:
             --tb=short \
             || true
 
+      - name: Check allure-results
+        run: |
+          echo "=== allure-results contents ==="
+          ls -la allure-results/ || echo "Directory not found!"
+          echo "=== count ==="
+          find allure-results -name "*.json" | wc -l
+
       - name: Upload allure-results & logs
         uses: actions/upload-artifact@v4
         if: always()
