@@ -1,0 +1,2 @@
+INFO     api_client.chat_completions:chat_completions.py:110 POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions (raw body)
+DEBUG    api_client.chat_completions:chat_completions.py:111 Raw data: {"model": "GigaChat", "messages": [{"role": "user", "content": "\u041f\u0440\u0438\u0432\u0435\u0442"}]}

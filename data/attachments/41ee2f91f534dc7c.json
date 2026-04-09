@@ -1,0 +1,21 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "Привет. Как настроение? Чем займёмся?",
+        "role": "assistant"
+      },
+      "index": 0,
+      "finish_reason": "stop"
+    }
+  ],
+  "created": 1775736506,
+  "model": "GigaChat:2.0.28.2",
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 12,
+    "total_tokens": 24,
+    "precached_prompt_tokens": 2
+  }
+}

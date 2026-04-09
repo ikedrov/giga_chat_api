@@ -1,0 +1,6 @@
+INFO     api_client.chat_completions:chat_completions.py:55 POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions
+DEBUG    api_client.chat_completions:chat_completions.py:56 Request payload: {'model': 'GigaChat', 'messages': [{'role': 'user', 'content': 'Столица России?'}], 'temperature': 0.1}
+DEBUG    api_client.chat_completions:chat_completions.py:57 Request headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
+INFO     api_client.chat_completions:chat_completions.py:67 Response status: 200
+DEBUG    api_client.chat_completions:chat_completions.py:68 Response body: {"choices":[{"message":{"content":"Москва.","role":"assistant"},"index":0,"finish_reason":"stop"}],"created":1775736510,"model":"GigaChat:2.0.28.2","object":"chat.completion","usage":{"prompt_tokens":15,"completion_tokens":3,"total_tokens":18,"precached_prompt_tokens":2}}
+INFO     schemas.validators:validators.py:27 Валидация по схеме 'minimal_response' пройдена успешно

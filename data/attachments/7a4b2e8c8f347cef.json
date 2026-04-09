@@ -1,0 +1,10 @@
+{
+  "model": "GigaChat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Привет"
+    }
+  ],
+  "top_p": 1.5
+}

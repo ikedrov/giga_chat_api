@@ -1,0 +1,3 @@
+INFO     api_client.chat_completions:chat_completions.py:55 POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions
+DEBUG    api_client.chat_completions:chat_completions.py:56 Request payload: {'model': 'GigaChat', 'messages': [{'role': 'system', 'content': 'Отвечай кратко.'}, {'role': 'user', 'content': 'Сколько будет 2+2?'}], 'temperature': 0.5, 'top_p': 0.8, 'max_tokens': 100, 'repetition_penalty': 1.0, 'stream': False, 'update_interval': 0}
+DEBUG    api_client.chat_completions:chat_completions.py:57 Request headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}

@@ -1,0 +1,19 @@
+{
+  "model": "GigaChat",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Отвечай кратко."
+    },
+    {
+      "role": "user",
+      "content": "Сколько будет 2+2?"
+    }
+  ],
+  "temperature": 0.5,
+  "top_p": 0.8,
+  "max_tokens": 100,
+  "repetition_penalty": 1.0,
+  "stream": false,
+  "update_interval": 0
+}

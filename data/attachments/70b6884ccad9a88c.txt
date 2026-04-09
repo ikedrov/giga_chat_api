@@ -1,0 +1,4 @@
+2026-04-09 12:08:26 [INFO] schemas.validators (validators.py:59): Запрос валиден по схеме 'minimal_request'
+2026-04-09 12:08:26 [INFO] api_client.chat_completions (chat_completions.py:55): POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions
+2026-04-09 12:08:29 [INFO] api_client.chat_completions (chat_completions.py:67): Response status: 200
+2026-04-09 12:08:29 [INFO] schemas.validators (validators.py:27): Валидация по схеме 'minimal_response' пройдена успешно

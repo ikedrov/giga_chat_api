@@ -1,0 +1,10 @@
+{
+  "model": "GigaChat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Столица России?"
+    }
+  ],
+  "temperature": 0.1
+}

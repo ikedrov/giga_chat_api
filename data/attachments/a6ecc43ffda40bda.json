@@ -1,0 +1,10 @@
+{
+  "model": "GigaChat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Расскажи о космосе кратко"
+    }
+  ],
+  "max_tokens": 50
+}

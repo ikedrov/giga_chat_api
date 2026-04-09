@@ -1,0 +1,10 @@
+{
+  "model": "GigaChat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Перечисли 5 планет Солнечной системы"
+    }
+  ],
+  "repetition_penalty": 1.2
+}

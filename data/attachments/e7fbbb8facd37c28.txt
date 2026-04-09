@@ -1,0 +1,1 @@
+INFO     api_client.chat_completions:chat_completions.py:79 POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions (без авторизации)

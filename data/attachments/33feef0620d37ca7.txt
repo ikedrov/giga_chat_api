@@ -1,0 +1,3 @@
+INFO     api_client.chat_completions:chat_completions.py:110 POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions (raw body)
+DEBUG    api_client.chat_completions:chat_completions.py:111 Raw data: {"model": "GigaChat", "messages": [{"role": "user", "content": "test"}
+INFO     tests.test_chat_completions:test_chat_completions.py:484 [invalid_json] Статус: 400

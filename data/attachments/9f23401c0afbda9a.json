@@ -1,0 +1,21 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "Космос — это бескрайнее пространство вне Земли, включающее небесные тела (звезды, планеты, кометы, астероиды), космическую пыль, газовые облака и тёмную материю. \n\nОсновные составляющие космоса:\n-",
+        "role": "assistant"
+      },
+      "index": 0,
+      "finish_reason": "length"
+    }
+  ],
+  "created": 1775736511,
+  "model": "GigaChat:2.0.28.2",
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 50,
+    "total_tokens": 68,
+    "precached_prompt_tokens": 2
+  }
+}

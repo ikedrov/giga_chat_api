@@ -1,0 +1,3 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","GigaChat API","0","POST /chat/completions","24","1","Негативные тесты","0"
+"2","GigaChat API","0","POST /chat/completions","30","0","Позитивные тесты","0"

@@ -1,0 +1,10 @@
+{
+  "model": "GigaChat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Привет"
+    }
+  ],
+  "max_tokens": -10
+}

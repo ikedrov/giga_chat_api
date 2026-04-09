@@ -1,0 +1,10 @@
+{
+  "model": "GigaChat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Расскажи анекдот"
+    }
+  ],
+  "stream": false
+}

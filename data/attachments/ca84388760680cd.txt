@@ -1,0 +1,1 @@
+2026-04-09 12:12:46 [INFO] api_client.chat_completions (chat_completions.py:92): POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions (невалидный токен)

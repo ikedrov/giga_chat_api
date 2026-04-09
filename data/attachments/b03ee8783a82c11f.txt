@@ -1,0 +1,1 @@
+2026-04-09 12:09:36 [INFO] api_client.chat_completions (chat_completions.py:55): POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions

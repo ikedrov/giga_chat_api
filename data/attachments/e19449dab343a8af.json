@@ -1,0 +1,21 @@
+{
+  "model": "GigaChat",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Ты — ассистент по математике."
+    },
+    {
+      "role": "user",
+      "content": "Сколько будет 2+2?"
+    },
+    {
+      "role": "assistant",
+      "content": "2+2 = 4"
+    },
+    {
+      "role": "user",
+      "content": "А 3+3?"
+    }
+  ]
+}

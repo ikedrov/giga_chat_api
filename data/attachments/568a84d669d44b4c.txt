@@ -1,0 +1,7 @@
+INFO     api_client.chat_completions:chat_completions.py:55 POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions
+DEBUG    api_client.chat_completions:chat_completions.py:56 Request payload: {'model': 'GigaChat', 'messages': [{'content': 'Привет'}]}
+DEBUG    api_client.chat_completions:chat_completions.py:57 Request headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
+INFO     api_client.chat_completions:chat_completions.py:67 Response status: 422
+DEBUG    api_client.chat_completions:chat_completions.py:68 Response body: {"status":422,"message":"Unknown role: "}
+
+INFO     tests.test_chat_completions:test_chat_completions.py:395 [missing_role] Статус: 422 (ожидался 4xx)

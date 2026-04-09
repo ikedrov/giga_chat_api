@@ -1,0 +1,9 @@
+{
+  "model": "NonExistentModel-999",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Привет"
+    }
+  ]
+}

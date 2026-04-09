@@ -1,0 +1,2 @@
+2026-04-09 12:12:25 [INFO] api_client.chat_completions (chat_completions.py:55): POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions
+2026-04-09 12:12:26 [INFO] api_client.chat_completions (chat_completions.py:67): Response status: 200

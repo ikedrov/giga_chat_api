@@ -1,0 +1,3 @@
+2026-04-09 12:12:28 [INFO] api_client.chat_completions (chat_completions.py:55): POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions
+2026-04-09 12:12:28 [INFO] api_client.chat_completions (chat_completions.py:67): Response status: 404
+2026-04-09 12:12:28 [INFO] tests.test_chat_completions (test_chat_completions.py:395): [empty_body] Статус: 404 (ожидался 4xx)

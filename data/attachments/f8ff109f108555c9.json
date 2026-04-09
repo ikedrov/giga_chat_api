@@ -1,0 +1,10 @@
+{
+  "model": "GigaChat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Что такое машинное обучение?"
+    }
+  ],
+  "top_p": 0.5
+}

@@ -1,0 +1,3 @@
+2026-04-09 12:12:37 [INFO] api_client.chat_completions (chat_completions.py:55): POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions
+2026-04-09 12:12:38 [INFO] api_client.chat_completions (chat_completions.py:67): Response status: 422
+2026-04-09 12:12:38 [INFO] tests.test_chat_completions (test_chat_completions.py:454): [invalid_role] Статус: 422 (ожидался 422)

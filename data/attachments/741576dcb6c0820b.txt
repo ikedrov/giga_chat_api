@@ -1,0 +1,11 @@
+INFO     api_client.auth:auth.py:29 Запрос access token по адресу: https://ngw.devices.sberbank.ru:9443/api/v2/oauth
+DEBUG    api_client.auth:auth.py:41 Auth response status: 200
+INFO     api_client.auth:auth.py:48 Access token получен успешно
+INFO     conftest:conftest.py:66 API клиент инициализирован: https://gigachat.devices.sberbank.ru/api/v1/chat/completions
+INFO     schemas.validators:validators.py:59 Запрос валиден по схеме 'minimal_request'
+INFO     api_client.chat_completions:chat_completions.py:55 POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions
+DEBUG    api_client.chat_completions:chat_completions.py:56 Request payload: {'model': 'GigaChat', 'messages': [{'role': 'user', 'content': 'Привет'}]}
+DEBUG    api_client.chat_completions:chat_completions.py:57 Request headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
+INFO     api_client.chat_completions:chat_completions.py:67 Response status: 200
+DEBUG    api_client.chat_completions:chat_completions.py:68 Response body: {"choices":[{"message":{"content":"Привет. Как настроение? Чем займёмся?","role":"assistant"},"index":0,"finish_reason":"stop"}],"created":1775736506,"model":"GigaChat:2.0.28.2","object":"chat.completion","usage":{"prompt_tokens":12,"completion_tokens":12,"total_tokens":24,"precached_prompt_tokens":2}}
+INFO     schemas.validators:validators.py:27 Валидация по схеме 'minimal_response' пройдена успешно

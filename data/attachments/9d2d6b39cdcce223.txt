@@ -1,0 +1,6 @@
+INFO     api_client.chat_completions:chat_completions.py:55 POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions
+DEBUG    api_client.chat_completions:chat_completions.py:56 Request payload: {'model': 'GigaChat', 'messages': [{'role': 'user', 'content': 'Расскажи анекдот'}], 'stream': False}
+DEBUG    api_client.chat_completions:chat_completions.py:57 Request headers: {'Content-Type': 'application/json', 'Accept': 'application/json'}
+INFO     api_client.chat_completions:chat_completions.py:67 Response status: 200
+DEBUG    api_client.chat_completions:chat_completions.py:68 Response body: {"choices":[{"message":{"content":"— Доктор, я никак не могу уснуть!\n— Вы ложитесь вовремя?\n— Ложу-у-усь…  \n— А когда вы ложитесь спать?\n— Ну… минут через двадцать после того, как жена легла!  \n\n(Анекдот основан на типичной ситуации семейной жизни и лёгкой иронии над бытовыми трудностями.)","role":"assistant"},"index":0,"finish_reason":"stop"}],"created":1775736656,"model":"GigaChat:2.0.28.2","object":"chat.completion","usage":{"prompt_tokens":17,"completion_tokens":72,"total_tokens":89,"precached_prompt_tokens":2}}
+INFO     schemas.validators:validators.py:27 Валидация по схеме 'minimal_response' пройдена успешно
